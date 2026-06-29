@@ -1,0 +1,111 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochi Heritage Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f4f4f4; color: #333; line-height: 1.6; }
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content { padding: 20px; }
+    .card h2 { margin-bottom: 10px; font-size: 1.4rem; color: #1e3c72; }
+    .card p { font-size: 0.95rem; color: #555; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #1e3c72;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kochi Monuments Portfolio</h1>
+    <p>Exploring the heritage and iconic landmarks of Kochi, Kerala</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Mattancherry_Palace.jpg" alt="Mattancherry Palace">
+      <div class="card-content">
+        <h2>Mattancherry Palace</h2>
+        <p>Also known as the Dutch Palace, this historic monument is famous for its Kerala murals and royal artifacts.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/St_Francis_Church_Kochi.jpg" alt="St Francis Church">
+      <div class="card-content">
+        <h2>St. Francis Church</h2>
+        <p>One of the oldest European churches in India, located in Fort Kochi with rich colonial history.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Paradesi_Synagogue.jpg" alt="Paradesi Synagogue">
+      <div class="card-content">
+        <h2>Paradesi Synagogue</h2>
+        <p>A historic synagogue in Jew Town, showcasing the Jewish heritage of Kochi.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Bolgatty_Palace.jpg" alt="Bolgatty Palace">
+      <div class="card-content">
+        <h2>Bolgatty Palace</h2>
+        <p>A beautiful Dutch-built palace on Bolgatty Island, now functioning as a heritage hotel.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Pallippuram_Fort.jpg" alt="Pallippuram Fort">
+      <div class="card-content">
+        <h2>Pallippuram Fort</h2>
+        <p>One of the oldest European forts in India, located on Vypin Island near Kochi.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Hill_Palace_Kochi.jpg" alt="Hill Palace">
+      <div class="card-content">
+        <h2>Hill Palace</h2>
+        <p>The largest archaeological museum in Kerala and former royal residence of the Kochi rulers.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed as a simple heritage portfolio for Kochi monuments</p>
+  </footer>
+</body>
+</html>
