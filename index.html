@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishnu Priya Devan | Portfolio</title>
+    <title>Vishnu Priya Devan | Professional Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <style>
         :root {
@@ -35,6 +35,17 @@
             margin-bottom: 60px;
             border-bottom: 1px solid #1e293b;
             padding-bottom: 40px;
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-blue);
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
         }
 
         header h1 {
@@ -184,20 +195,21 @@
 
     <div class="container">
         <header>
+            <!-- Professional Picture Element -->
+            <img src="profile.jpg" alt="Vishnu Priya Devan" class="profile-img">
             <h1>Vishnu Priya Devan</h1>
             <p>Digital Forensics | Cyber Security & Ethical Hacking | Forensic Life Sciences</p>
             <div class="social-links">
-                <a href="mailto:vishnupriyadevan1@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:vishnupriyadevan1@gmail.com" title="Email Direct"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/vishnupriyadevan" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/vishnupriyadevan" target="_blank" title="GitHub Repositories"><i class="fab fa-github"></i></a>
             </div>
         </header>
 
-        <!-- Core Domains / Expertise Pages Bridge -->
+        <!-- Core Domains Grid -->
         <h2>Areas of Expertise</h2>
         <div class="pillars-grid">
             
-            <!-- Cyber Security & Ethical Hacking -->
             <div class="pillar-card">
                 <i class="fas fa-shield-alt cyber-ico"></i>
                 <h3>Cyber Security & Ethical Hacking</h3>
@@ -209,7 +221,6 @@
                 </ul>
             </div>
 
-            <!-- Criminal & Digital Investigation -->
             <div class="pillar-card">
                 <i class="fas fa-search forensic-ico"></i>
                 <h3>Criminal Investigation & Forensics</h3>
@@ -221,7 +232,6 @@
                 </ul>
             </div>
 
-            <!-- Forensic Biology -->
             <div class="pillar-card">
                 <i class="fas fa-dna bio-ico"></i>
                 <h3>Forensic Biology & Serology</h3>
@@ -233,7 +243,6 @@
                 </ul>
             </div>
 
-            <!-- Analytical Chemistry -->
             <div class="pillar-card">
                 <i class="fas fa-flask chem-ico"></i>
                 <h3>Analytical Chemistry & Quality</h3>
@@ -247,29 +256,22 @@
 
         </div>
 
-        <!-- Featured Case Work & Projects -->
-        <h2>Featured Investigations & Projects</h2>
+        <!-- Featured Case Work & Interactive Journey -->
+        <h2>Featured Investigations & Publications</h2>
         <div class="projects-list">
 
             <div class="project-item">
+                <span class="badge">Publications</span> <span class="badge">Forensic Research</span>
+                <h3>"Prints of Progress: The Changing Face of Fingerprint Detection and Application"</h3>
+                <p class="project-desc">Co-authored academic book chapter published in "The Science of Criminal Investigation" (Literatureslight Publishing, Ed. Nishchal Soni). Evaluates the evolution of physical and digital fingerprint tracking from foundational methodologies to modernized automation metrics.</p>
+                <a href="https://www.amazon.in/dp/B0D189Y47M" target="_blank" class="btn"><i class="fab fa-amazon"></i> View on Amazon India</a>
+            </div>
+
+            <div class="project-item">
                 <span class="badge">Cyber Security</span> <span class="badge">Incident Response</span>
-                <h3>Enterprise Threat Matrix & Cyber-Attack Analysis</h3>
-                <p class="project-desc">A deep-dive investigative analysis of major global modern cyber security failures, dissecting advanced threat indicators, ALPHV/BlackCat ransomware deployment strategies, and API security vulnerabilities.</p>
-                <a href="#" class="btn">View Case Study</a>
-            </div>
-
-            <div class="project-item">
-                <span class="badge">Criminal Investigation</span> <span class="badge">Biology</span>
-                <h3>Accredited Laboratory Evidence Management</h3>
-                <p class="project-desc">Demonstrated procedural excellence at the Regional Forensic Science Laboratory, completing systematic screenings across high-stakes case categories while processing 90+ legal-grade reports with zero verification failures.</p>
-                <a href="#" class="btn">Review Competencies</a>
-            </div>
-
-            <div class="project-item">
-                <span class="badge">Publications</span> <span class="badge">Chemistry</span>
-                <h3>"Prints of Progress" — Advanced Forensic Identification</h3>
-                <p class="project-desc">Co-authored academic book chapter mapping historical forensic identification methods onto modern multi-disciplinary instrumentation frameworks, ensuring comprehensive legal and analytical integrity.</p>
-                <a href="#" class="btn">View Publication</a>
+                <h3>Enterprise Threat Matrix & Incident Response Breakdown</h3>
+                <p class="project-desc">Advanced technical investigation exploring high-profile perimeter failures, including the ALPHV/BlackCat ransomware incident (Change Healthcare) and architectural API vulnerabilities (Dell Technologies). Built via the Boston Institute of Analytics Capstone.</p>
+                <a href="https://github.com/vishnupriyadevan/vishnupriyadevan.github.io" target="_blank" class="btn"><i class="fab fa-github"></i> Explore Documentation Repository</a>
             </div>
 
         </div>
