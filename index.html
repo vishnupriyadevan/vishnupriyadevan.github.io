@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Priya Devan | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --bg-dark: #0a0f1d;
+            --card-bg: #131a2e;
+            --accent-blue: #00d2ff;
+            --accent-green: #00ffa3;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin: 0 0 20px 0;
+        }
+
+        .social-links a {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        /* Pillars Grid */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .pillar-card {
+            background-color: var(--card-bg);
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+
+        .pillar-card i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .cyber-ico { color: #00d2ff; }
+        .forensic-ico { color: #ff007f; }
+        .bio-ico { color: #00ffa3; }
+        .chem-ico { color: #ffaa00; }
+
+        .pillar-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.3rem;
+        }
+
+        .pillar-card ul {
+            padding-left: 20px;
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .pillar-card ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Featured Projects */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-item {
+            background-color: var(--card-bg);
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .project-item h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent-blue);
+        }
+
+        .badge {
+            background: #1e293b;
+            color: var(--accent-green);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d2ff, #0072ff);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Vishnu Priya Devan</h1>
+            <p>Digital Forensics | Cyber Security & Ethical Hacking | Forensic Life Sciences</p>
+            <div class="social-links">
+                <a href="mailto:vishnupriyadevan1@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </header>
+
+        <!-- Core Domains / Expertise Pages Bridge -->
+        <h2>Areas of Expertise</h2>
+        <div class="pillars-grid">
+            
+            <!-- Cyber Security & Ethical Hacking -->
+            <div class="pillar-card">
+                <i class="fas fa-shield-alt cyber-ico"></i>
+                <h3>Cyber Security & Ethical Hacking</h3>
+                <ul>
+                    <li>Network Security & Perimeter Defense</li>
+                    <li>Web Application Security (OWASP Top 10)</li>
+                    <li>Vulnerability Assessment & VAPT Standards</li>
+                    <li>API & Mobile Application Penetration Testing</li>
+                </ul>
+            </div>
+
+            <!-- Criminal & Digital Investigation -->
+            <div class="pillar-card">
+                <i class="fas fa-search forensic-ico"></i>
+                <h3>Criminal Investigation & Forensics</h3>
+                <ul>
+                    <li>Digital Evidence Handling & Documentation</li>
+                    <li>Strict Chain-of-Custody Compliance</li>
+                    <li>Court-Admissible Technical Report Writing</li>
+                    <li>Judicial Frameworks & Evidentiary Standards</li>
+                </ul>
+            </div>
+
+            <!-- Forensic Biology -->
+            <div class="pillar-card">
+                <i class="fas fa-dna bio-ico"></i>
+                <h3>Forensic Biology & Serology</h3>
+                <ul>
+                    <li>Bloodstain Pattern Analysis (BPA)</li>
+                    <li>Serological Fluid Identification</li>
+                    <li>DNA Extraction Workflows</li>
+                    <li>Biological Sample Preservation</li>
+                </ul>
+            </div>
+
+            <!-- Analytical Chemistry -->
+            <div class="pillar-card">
+                <i class="fas fa-flask chem-ico"></i>
+                <h3>Analytical Chemistry & Quality</h3>
+                <ul>
+                    <li>Spectroscopic Techniques (UV-Vis, IR, NMR)</li>
+                    <li>Good Laboratory Practice (GLP) Alignment</li>
+                    <li>Chemical Screening & Sample Isolation</li>
+                    <li>QA/QC Protocol Maintenance</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Featured Case Work & Projects -->
+        <h2>Featured Investigations & Projects</h2>
+        <div class="projects-list">
+
+            <div class="project-item">
+                <span class="badge">Cyber Security</span> <span class="badge">Incident Response</span>
+                <h3>Enterprise Threat Matrix & Cyber-Attack Analysis</h3>
+                <p class="project-desc">A deep-dive investigative analysis of major global modern cyber security failures, dissecting advanced threat indicators, ALPHV/BlackCat ransomware deployment strategies, and API security vulnerabilities.</p>
+                <a href="#" class="btn">View Case Study</a>
+            </div>
+
+            <div class="project-item">
+                <span class="badge">Criminal Investigation</span> <span class="badge">Biology</span>
+                <h3>Accredited Laboratory Evidence Management</h3>
+                <p class="project-desc">Demonstrated procedural excellence at the Regional Forensic Science Laboratory, completing systematic screenings across high-stakes case categories while processing 90+ legal-grade reports with zero verification failures.</p>
+                <a href="#" class="btn">Review Competencies</a>
+            </div>
+
+            <div class="project-item">
+                <span class="badge">Publications</span> <span class="badge">Chemistry</span>
+                <h3>"Prints of Progress" — Advanced Forensic Identification</h3>
+                <p class="project-desc">Co-authored academic book chapter mapping historical forensic identification methods onto modern multi-disciplinary instrumentation frameworks, ensuring comprehensive legal and analytical integrity.</p>
+                <a href="#" class="btn">View Publication</a>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Vishnu Priya Devan. Driven by scientific rigor and digital compliance.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
